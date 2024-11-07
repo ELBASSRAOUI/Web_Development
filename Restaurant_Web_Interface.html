@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Table Hassani</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .more-text {
+            display: none;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .team-member img {
+            width: 100px; /* Ajustez la taille des images des membres de l'équipe */
+            height: 100px;
+            border-radius: 50%; /* Rend l'image circulaire */
+        }
+        /* Masquer la section de l'équipe sur mobile et tablette */
+        @media (max-width: 992px) {
+            #team-section {
+                display: none;
+            }
+            /* Afficher une seule carte de menu répétée trois fois */
+            .menu-card .card {
+                display: block;
+            }
+            .menu-card .card:not(:first-of-type) {
+                display: none;
+            }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation supérieure -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo de la société -->
+            <a class="navbar-brand" href="#">
+                <img src="C:/Users/MTechno/Desktop/2SIG/DALL·E 2024-10-28 16.30.02 - A modern and elegant logo for a restaurant named 'La Table Hassani'. The logo features a stylized table silhouette, incorporating elements of Moroccan.png" 
+                     alt="La Table Hassani Logo" 
+                     style="width: 50px; height: auto;">
+                La Table Hassani
+            </a>
+
+            <!-- Bouton de menu pour les écrans réduits -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Liens de navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <!-- Barre de recherche -->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Rechercher..." aria-label="Rechercher" style="width: 200px;">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrousel -->
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="C:/Users/MTechno/Desktop/2SIG/tajine.jpg" class="d-block w-100" alt="Tajine">
+            </div>
+            <div class="carousel-item">
+                <img src="C:/Users/MTechno/Desktop/2SIG/Tajine Boulette De Boeuf Marocaine.jpg" class="d-block w-100" alt="Tajine Boulette">
+            </div>
+            <div class="carousel-item">
+                <img src="C:/Users/MTechno/Desktop/2SIG/m9ilaat.jpg" class="d-block w-100" alt="M9ilaat">
+            </div>
+            <div class="carousel-item">
+                <img src="C:/Users/MTechno/Desktop/2SIG/theee.jpg" class="d-block w-100" alt="Thé Marocain">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Précédent</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Suivant</span>
+        </a>
+    </div>
+
+    <style>
+        /* Styles pour le carrousel */
+        #carouselExample img {
+            height: 300px; /* Ajustez la hauteur comme souhaité */
+            object-fit: cover; /* Assure que l'image garde son ratio sans déformer */
+        }
+    </style>
+
+    <!-- Section des cartes -->
+    <div class="container my-5 menu-card">
+        <h2 class="text-center mb-4">Nos Menus</h2>
+        <div class="row">
+            <!-- Carte 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="C:/Users/MTechno/Desktop/2SIG/TAJIIN.jpg" class="card-img-top" alt="Tajine">
+                    <div class="card-body">
+                        <h5 class="card-title">Tajine</h5>
+                        <p class="card-text">Le tajine, véritable emblème de la cuisine marocaine, exhale les arômes envoûtants du Maghreb et invite au voyage.</p>
+                        <p class="more-text">Ce plat, soigneusement préparé dans un ustensile en terre cuite vernissée, cuit lentement, non seulement au charbon de bois traditionnel mais aussi sur un réchaud moderne, assurant une maîtrise parfaite de la température. Sous l’expertise du Chef Marouani, chaque tajine devient une œuvre d’art culinaire où épices et ingrédients de qualité se marient subtilement, offrant une expérience gustative authentique et raffinée.</p>
+                        <button class="btn btn-primary voir-plus">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="C:/Users/MTechno/Desktop/2SIG/OIP.jpg" class="card-img-top" alt="Tajine Boulette">
+                    <div class="card-body">
+                        <h5 class="card-title">Tajine Boulette De Boeuf Marocaine</h5>
+                        <p class="card-text">Le tajine de boulettes de bœuf est un plat traditionnel marocain savoureux et réconfortant.</p>
+                        <p class="more-text">Ce plat emblématique se compose de boulettes de viande hachée, assaisonnées d’épices aromatiques et cuites lentement dans une sauce riche. Voici un aperçu des éléments clés de ce délicieux tajine :
+                            Ingrédients
+Boulettes de bœuf : Viande hachée de bœuf, mélangée avec des herbes fraîches comme le persil et la coriandre, ainsi que des épices telles que le cumin, le paprika et le sel.
+Sauce : Tomates fraîches ou concassées, oignons, ail, et un mélange d’épices marocaines pour créer une base riche et savoureuse.
+Légumes : Carottes, pommes de terre, et pois chiches, ajoutés pour plus de texture et de saveur.
+Olives et œufs durs (facultatif) : Parfois ajoutés à la fin de la cuisson pour une touche supplémentaire.
+                        </p>
+                        <button class="btn btn-primary voir-plus">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="C:/Users/MTechno/Desktop/2SIG/m9ila.jpg" class="card-img-top" alt="Mekila aux Fruits de Mer">
+                    <div class="card-body">
+                        <h5 class="card-title">Mekila aux Fruits de Mer</h5>
+                        <p class="card-text">Mekila est un plat traditionnel marocain à base de fruits de mer.</p>
+                        <p class="more-text">
+                            C'est une délicieuse spécialité qui met en avant les saveurs maritimes de la cuisine marocaine. 
+                            
+                            
+                            <strong>Voici une description détaillée de ce plat :</strong><br>
+                            Fruits de mer variés : Crevettes, calamars, moules et poissons blancs, frais et de qualité.<br>
+                            Légumes : Oignons, poivrons, tomates et carottes, coupés en dés.<br>
+                            Épices : Cumin, paprika, safran, sel et poivre, pour relever les saveurs.<br>
+                            Herbes fraîches : Coriandre et persil, hachés finement pour une touche de fraîcheur.<br>
+                            Huile d'olive : Pour faire revenir les légumes et les épices.<br>
+                            Citron : Pour le goût et la garniture.
+                        </p>
+                        <button class="btn btn-primary voir-plus">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+            
+    <!-- Section de l'équipe -->
+    <div class="container my-5" id="team-section">
+        <h2 class="text-center mb-4">Notre Équipe</h2>
+        <div class="row">
+            <div class="col-md-4 team-member">
+                <img src="C:\Users\MTechno\Desktop\2SIG\marwani.jpg" alt="Amine Marouani">
+                <h5>Amine MAROUANI</h5>
+                <p>Chef de la restauration et fondateur d'origine d'ASAFI MAROC. Il apporte son expertise et sa passion pour la cuisine marocaine, guidant l'équipe vers l'excellence culinaire.</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="C:\Users\MTechno\Desktop\2SIG\farid.png" alt="Farid Dowiw">
+                <h5>Farid Douiou</h5>
+                <p>Associé et responsable des achats des matières premières. Il assure la sélection des ingrédients de la plus haute qualité, garantissant ainsi l'authenticité et la fraîcheur de nos plats.</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="C:\Users\MTechno\Desktop\2SIG\narja.png" alt="ILYASS">
+                <h5>Chouaib Narja</h5>
+                <p>Cher des boissons chaudes et expert en thé marocain. Il maîtrise l'art de préparer des infusions traditionnelles, offrant une expérience authentique et réconfortante à chaque tasse.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-md-6 footer-contact">
+                    <h5 class="text-uppercase">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: info@latablehassani.com</li>
+                        <li>Téléphone: +212 6 123 45678</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 footer-map">
+                    <h5 class="text-uppercase">Localisation</h5>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.742748172042!2d-7.650975!3d33.549045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d31fd1289f07%3A0x72b91a9ff9d830fa!2sEcole%20Hassania%20des%20Travaux%20Publics!5e0!3m2!1sen!2sma!4v1698510176358!5m2!1sen!2sma" 
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3">
+            © 2024 La Table Hassani
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelectorAll('.voir-plus').forEach(button => {
+            button.addEventListener('click', () => {
+                const moreText = button.parentElement.querySelector('.more-text');
+                if (moreText.style.display === "none" || moreText.style.display === "") {
+                    moreText.style.display = "block";
+                    button.textContent = "Voir moins";
+                } else {
+                    moreText.style.display = "none";
+                    button.textContent = "Voir plus";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
